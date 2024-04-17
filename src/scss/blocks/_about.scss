@@ -1,0 +1,37 @@
+.about {
+  &__company {
+    padding: 100px 110px;
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
+    margin-bottom: 100px;
+    text-align: center;
+
+    &-descr {
+      font-weight: 600;
+
+      &_red {
+        color: $main-color;
+      }
+    }
+  }
+
+  &__numbers {
+    padding: 0 110px;
+
+    &-items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 80px 110px;
+    }
+
+    &-item {
+      font-size: toRem(18);
+      span {
+        display: block;
+        font-size: toRem(80);
+        color: $main-color;
+        font-weight: 600;
+      }
+    }
+  }
+}

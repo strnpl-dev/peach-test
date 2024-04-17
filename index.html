@@ -3,10 +3,361 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peach Test</title>
+    <title>Softline</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <header class="header">
+        <div class="container container_p">
+          <div class="header__wrapper">
+            <a href="#" class="header__logo">
+              <img src="/images/logo.svg" alt="logo" class="header__logo-img" />
+            </a>
+            <nav class="nav">
+              <ul class="nav__items">
+                <li class="nav__item">
+                  <a href="#" class="nav__item-link">Облачные решения</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-link">Кибербезопасность</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-link">Импортозамещение</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-link"> Цифровая трансформация</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <section class="promo section">
+        <div class="container">
+          <div class="promo__wrapper">
+            <h1 class="title promo__title">
+              Поставщик услуг цифровой
+              <br />
+              трансформации <br />
+              и кибербезопасности
+            </h1>
+            <a href="#" class="promo__button button">На сайт</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section">
+        <div class="container container_p">
+          <div class="about__company">
+            <p class="about__company-descr">
+              <span class="about__company-descr_red">Softline</span> - ведущий
+              поставщик IT-решений и сервисов.* <br />
+              Мы предлагаем комплексные IT-решения, облака, программное и
+              аппаратное обеспечение, решения по цифровой трансформации и
+              кибербезопасности, а также широкий спектр IT-услуг.
+            </p>
+          </div>
+          <div class="about__numbers">
+            <div class="about__numbers-items">
+              <div class="about__numbers-item">
+                <span>> 30 лет </span>
+                на IT-рынке
+              </div>
+              <div class="about__numbers-item">
+                <span>4600</span>сотрудников в России
+              </div>
+              <div class="about__numbers-item">
+                <span>25</span>городов России
+              </div>
+              <div class="about__numbers-item">
+                <span>2000 +</span>разработчиков
+              </div>
+              <div class="about__numbers-item">
+                <span>3000 +</span>сотрудников ежегодно <br />
+                проходят оценку и обучение
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map section">
+        <div class="container">
+          <div class="map__wrapper">
+            <div class="map__selection">
+              Офисы Softline
+              <img src="/icons/arrows/arr_down.svg" alt="arrow down" />
+            </div>
+            <div class="map__nav">
+              <ul class="map__nav-items">
+                <li class="map__nav-item">Все</li>
+                <li class="map__nav-item">Москва</li>
+                <li class="map__nav-item">Центр</li>
+                <li class="map__nav-item">Северо-Запад</li>
+                <li class="map__nav-item">Юг</li>
+                <li class="map__nav-item">Волга</li>
+                <li class="map__nav-item">Урал</li>
+                <li class="map__nav-item">Сибирь</li>
+                <li class="map__nav-item">Дальний восток</li>
+              </ul>
+            </div>
+
+            <div class="map__dropdown">
+              <ul class="map__dropdown-items">
+                <li class="map__dropdown-item">Москва</li>
+                <li class="map__dropdown-item">
+                  Центр
+                  <ul class="map__dropdown-cities">
+                    <li>Воронеж</li>
+                    <li>Ярославль</li>
+                    <li>Белгород</li>
+                  </ul>
+                </li>
+                <li class="map__dropdown-item">
+                  Северо-Запад
+                  <ul class="map__dropdown-cities">
+                    <li>Санкт-Петербург</li>
+                    <li>Калининград</li>
+                  </ul>
+                </li>
+                <li class="map__dropdown-item">
+                  Юг
+                  <ul class="map__dropdown-cities">
+                    <li>Ростов-на-Дону</li>
+                    <li>Краснодар</li>
+                    <li>Волгоград</li>
+                  </ul>
+                </li>
+                <li class="map__dropdown-item">
+                  Волгоград
+                  <ul class="map__dropdown-cities">
+                    <li>Казань</li>
+                    <li>Самара</li>
+                    <li>Уфа</li>
+                    <li>Оренбург</li>
+                    <li>Нижний Новгород</li>
+                  </ul>
+                </li>
+                <li class="map__dropdown-item">
+                  Урал
+                  <ul class="map__dropdown-cities">
+                    <li>Екатеринбург</li>
+                    <li>Челябинск</li>
+                    <li>Пермь</li>
+                    <li>Сургут</li>
+                    <li>Тюмень</li>
+                    <li>Ижевск</li>
+                  </ul>
+                </li>
+                <li class="map__dropdown-item">
+                  Сибирь
+                  <ul class="map__dropdown-cities">
+                    <li>Новосибирск</li>
+                    <li>Омск</li>
+                    <li>Томск</li>
+                    <li>Красноярск</li>
+                    <li>Иркутск</li>
+                  </ul>
+                </li>
+                <li class="map__dropdown-item">
+                  Дальний Восток
+                  <ul class="map__dropdown-cities">
+                    <li>Хабаровск</li>
+                    <li>Владивосток</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="map__img">
+              <img src="/images/bgs/map.png" alt="map" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mission section">
+        <div class="container">
+          <h2 class="mission__title title">Миссия Softline</h2>
+          <p class="mission__descr">
+            Мы помогаем организациям трансформироваться, работать эффективно и
+            безопасно в условиях цифровой экономики.
+          </p>
+        </div>
+      </section>
+
+      <section class="directions section">
+        <div class="container">
+          <h2 class="directions__title title">Направления бизнеса</h2>
+
+          <div class="directions__items">
+            <div class="directions__item">
+              <img src="/images/direction/solutions.png" alt="solutions" />
+              <div class="directions__title">Решения Softline</div>
+              <div class="directions__descr">
+                ГК Softline предлагает клиентам собственную линейку оборудования
+                (ПК, серверы, торговое оборудование и проч.), разработку
+                программных продуктов, облачных решений, решений в области
+                информационной безопасности.
+              </div>
+            </div>
+
+            <div class="directions__item">
+              <img src="/images/direction/cyber.png" alt="cyber" />
+              <div class="directions__title">Кибербезопасность</div>
+              <div class="directions__descr">
+                Softline обладает всеми необходимыми государственными лицензиями
+                для организации проектов по информационной безопасности и
+                аттестации.
+              </div>
+            </div>
+
+            <div class="directions__item">
+              <img src="/images/direction/import.png" alt="import" />
+              <div class="directions__title">Импортозамещение</div>
+              <div class="directions__descr">
+                ГК Softline обладает широчайшим портфелем решений и услуг для
+                импортозамещения, включая ПО и оборудование собственного
+                производства.
+              </div>
+            </div>
+
+            <div class="directions__item">
+              <img src="/images/direction/cloud.png" alt="cloud" />
+              <div class="directions__title">Облачные решения</div>
+              <div class="directions__descr">
+                Softline использует современные облачные решения как российских,
+                так и международных вендоров для масштабирования бизнеса своих
+                клиентов. Подписки, услуги, трансформация.
+              </div>
+            </div>
+
+            <div class="directions__item">
+              <img src="/images/direction/development.png" alt="development" />
+              <div class="directions__title">
+                Цифровая трансформация и разработка ПО
+              </div>
+              <div class="directions__descr">
+                Softline использует современные технологи и новые возможности
+                для увеличения производительности бизнеса заказчика. В штате ГК
+                Softline - 2000+ разработчиков, которые трансформируют ПО под
+                нужды конкретного предприятия.
+              </div>
+            </div>
+
+            <div class="directions__item">
+              <img
+                src="/images/direction/tech_support.png"
+                alt="tech support"
+              />
+              <div class="directions__title">
+                Техническая поддержка Softline
+              </div>
+              <div class="directions__descr">
+                200+ инженеров, 24 часа в сутки, 7 дней в неделю, 12 месяцев в
+                году, сервисное партнерство с 30+ мировыми производителями.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="compensation section">
+        <div class="container container_p">
+          <h2 class="compensation__title title">Компенсационный пакет</h2>
+          <div class="compensation__items">
+            <div class="compensation__item">
+              <img src="/icons/compensation/dms.svg" alt="dms" />
+              <p class="compensation__item-text">ДМС</p>
+            </div>
+
+            <div class="compensation__item">
+              <img src="/icons/compensation/birthday.svg" alt="birthday" />
+              <p class="compensation__item-text">Выходной в день рождения</p>
+            </div>
+
+            <div class="compensation__item">
+              <img src="/icons/compensation/phone.svg" alt="phone" />
+              <p class="compensation__item-text">
+                Корпоративная мобильная связь
+              </p>
+            </div>
+
+            <div class="compensation__item">
+              <img src="/icons/compensation/sport.svg" alt="sport" />
+              <p class="compensation__item-text">
+                Корпоративные скидки на спорт
+              </p>
+            </div>
+
+            <div class="compensation__item">
+              <img src="/icons/compensation/lti.svg" alt="lti" />
+              <p class="compensation__item-text">LTI</p>
+            </div>
+          </div>
+
+          <div class="compensation__breakline"></div>
+
+          <div class="compensation__text">
+            Программа дополнительной мотивации
+            <span class="compensation__text_red">доплата 12% от суммы</span>
+          </div>
+
+          <div class="compensation__items">
+            <div class="compensation__item">
+              <img src="/icons/motivation/printer.svg" alt="printer" />
+              <p class="compensation__item-text">Оргтехники</p>
+            </div>
+
+            <div class="compensation__item">
+              <img src="/icons/motivation/dms.svg" alt="dms" />
+              <p class="compensation__item-text">ДМС</p>
+            </div>
+
+            <div class="compensation__item">
+              <img src="/icons/motivation/house.svg" alt="house" />
+              <p class="compensation__item-text">Ипотеки</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slider">
+        <div class="container container_p">
+          <div class="slider__top">
+            <h2 class="slider__top-title title">Корпоративная жизнь</h2>
+            <div class="slider__top-btns">
+              <img
+                src="/icons/arrows/arr_left.svg"
+                alt="arrow left"
+                class="slider__arrow slider-prev"
+              />
+              <img
+                src="/icons/arrows/arr_right.svg"
+                alt="arrow right"
+                class="slider__arrow slider-next"
+              />
+            </div>
+          </div>
+          <div class="slider__wrapper">
+            <img src="/images/slider/slide1.png" alt="slide1" />
+            <img src="/images/slider/slide2.png" alt="slide2" />
+            <img src="/images/slider/slide3.png" alt="slide3" />
+            <img src="/images/slider/slide4.png" alt="slide4" />
+            <img src="/images/slider/slide5.png" alt="slide5" />
+          </div>
+          <div class="slider__tabs"></div>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

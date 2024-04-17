@@ -1,0 +1,13 @@
+.promo {
+  &__wrapper {
+    padding: 158px 70px;
+    background: url("/public/images/bgs/promo_bg.png") center center/cover
+      no-repeat;
+    height: 600px;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+}
