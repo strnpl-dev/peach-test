@@ -14,7 +14,7 @@
   <body>
     <div id="app">
       <header class="header">
-        <div class="container container_p">
+        <div class="container">
           <div class="header__wrapper">
             <a href="#" class="header__logo">
               <img src="/images/logo.svg" alt="logo" class="header__logo-img" />
@@ -95,23 +95,24 @@
               Офисы Softline
               <img src="/icons/arrows/arr_down.svg" alt="arrow down" />
             </div>
-            <div class="map__nav">
-              <ul class="map__nav-items">
-                <li class="map__nav-item">Все</li>
-                <li class="map__nav-item">Москва</li>
-                <li class="map__nav-item">Центр</li>
-                <li class="map__nav-item">Северо-Запад</li>
-                <li class="map__nav-item">Юг</li>
-                <li class="map__nav-item">Волга</li>
-                <li class="map__nav-item">Урал</li>
-                <li class="map__nav-item">Сибирь</li>
-                <li class="map__nav-item">Дальний восток</li>
-              </ul>
-            </div>
+
+            <ul class="map__nav">
+              <li class="map__nav-item map__nav-item_active">Все</li>
+              <li class="map__nav-item">Москва</li>
+              <li class="map__nav-item">Центр</li>
+              <li class="map__nav-item">Северо-Запад</li>
+              <li class="map__nav-item">Юг</li>
+              <li class="map__nav-item">Волга</li>
+              <li class="map__nav-item">Урал</li>
+              <li class="map__nav-item">Сибирь</li>
+              <li class="map__nav-item">Дальний восток</li>
+            </ul>
 
             <div class="map__dropdown">
               <ul class="map__dropdown-items">
-                <li class="map__dropdown-item">Москва</li>
+                <li class="map__dropdown-item map__dropdown-item_active">
+                  Москва
+                </li>
                 <li class="map__dropdown-item">
                   Центр
                   <ul class="map__dropdown-cities">
@@ -175,21 +176,22 @@
                 </li>
               </ul>
             </div>
-
-            <div class="map__img">
-              <img src="/images/bgs/map.png" alt="map" />
-            </div>
+          </div>
+          <div class="map__img">
+            <img src="/images/bgs/map.png" alt="map" />
           </div>
         </div>
       </section>
 
       <section class="mission section">
         <div class="container">
-          <h2 class="mission__title title">Миссия Softline</h2>
-          <p class="mission__descr">
-            Мы помогаем организациям трансформироваться, работать эффективно и
-            безопасно в условиях цифровой экономики.
-          </p>
+          <div class="mission__wrapper">
+            <h2 class="mission__title title">Миссия Softline</h2>
+            <p class="mission__descr">
+              Мы помогаем организациям трансформироваться, работать эффективно и
+              безопасно в условиях цифровой экономики.
+            </p>
+          </div>
         </div>
       </section>
 
