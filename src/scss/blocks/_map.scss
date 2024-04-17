@@ -204,8 +204,20 @@
   right: 61.6%;
 }
 .map__dot[data-city="tomsk"] {
-  bottom: 19.9%;
+  bottom: 23.9%;
   right: 52%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background-color: $text-color;
+    border-radius: 100%;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .map__dot[data-city="krasnoy"] {
   bottom: 20%;
@@ -216,8 +228,20 @@
   right: 42.8%;
 }
 .map__dot[data-city="hab"] {
-  bottom: 14%;
+  bottom: 17%;
   right: 18.8%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background-color: $text-color;
+    border-radius: 100%;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .map__dot[data-city="vlad"] {
   bottom: 0%;
