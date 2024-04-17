@@ -1,0 +1,56 @@
+.directions {
+  &__title {
+    margin-bottom: 55px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(50% - 20px), 1fr));
+    gap: 20px;
+  }
+
+  &__item {
+    height: 260px;
+    overflow: hidden;
+
+    &:hover .directions__item-content {
+      transition: all 0.3s ease-out;
+      transform: translateY(0);
+    }
+
+    &:first-child {
+      background: url("/images/direction/solutions.png") center center/cover
+        no-repeat;
+    }
+
+    &-content {
+      padding: 28px 115px 90px 20px;
+      background-color: rgba(45, 54, 83, 0.6);
+      height: 100%;
+      transform: translateY(calc(260px - 80px));
+      transition: all 0.3s ease-out;
+    }
+
+    &-title {
+      color: #fff;
+      margin-bottom: 20px;
+      font-size: toRem(24);
+      font-weight: 600;
+    }
+
+    &-descr {
+      color: #fff;
+      font-size: toRem(17);
+      line-height: 140%;
+    }
+  }
+}
+
+@for $i from 1 to 7 {
+  .directions__item:nth-child(#{$i}) {
+    background: url("/public/images/direction/directions-#{$i}.png")
+      center
+      top/cover
+      no-repeat;
+  }
+}

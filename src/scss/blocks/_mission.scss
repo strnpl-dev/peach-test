@@ -1,6 +1,6 @@
 .mission {
   &__wrapper {
-    background-color: $main-color;
+    background-color: $secondary-color;
     padding: 140px 70px;
     color: #fff;
     text-align: center;
@@ -32,6 +32,7 @@
   }
 
   &__descr {
+    line-height: 150%;
     position: relative;
     z-index: 5;
   }
