@@ -13,8 +13,8 @@ const slider = new Swiper('.swiper', {
     },
     on: {
         init: function () {
-            var bullets = document.querySelectorAll('.swiper-pagination-bullet');
-            var bulletWidth = (100 / bullets.length); // Вычисляем ширину буллета с учетом отступа в 10px
+            const bullets = document.querySelectorAll('.swiper-pagination-bullet');
+            let bulletWidth = (100 / bullets.length);
 
             bullets.forEach(function (bullet) {
                 bullet.style.width = `calc(${bulletWidth}% - 10px)`;
