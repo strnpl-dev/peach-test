@@ -280,55 +280,71 @@
             <h2 class="compensation__title title">Компенсационный пакет</h2>
             <div class="compensation__items">
               <div class="compensation__item">
-                <img src="/icons/compensation/dms.svg" alt="dms" />
+                <div class="compensation__item-icon">
+                  <img src="/icons/compensation/dms.svg" alt="dms" />
+                </div>
                 <p class="compensation__item-text">ДМС</p>
               </div>
 
               <div class="compensation__item">
-                <img src="/icons/compensation/birthday.svg" alt="birthday" />
+                <div class="compensation__item-icon">
+                  <img src="/icons/compensation/birthday.svg" alt="birthday" />
+                </div>
                 <p class="compensation__item-text">Выходной в день рождения</p>
               </div>
 
               <div class="compensation__item">
-                <img src="/icons/compensation/phone.svg" alt="phone" />
+                <div class="compensation__item-icon">
+                  <img src="/icons/compensation/phone.svg" alt="phone" />
+                </div>
                 <p class="compensation__item-text">
                   Корпоративная мобильная связь
                 </p>
               </div>
 
               <div class="compensation__item">
-                <img src="/icons/compensation/sport.svg" alt="sport" />
+                <div class="compensation__item-icon">
+                  <img src="/icons/compensation/sport.svg" alt="sport" />
+                </div>
                 <p class="compensation__item-text">
                   Корпоративные скидки на спорт
                 </p>
               </div>
 
               <div class="compensation__item">
-                <img src="/icons/compensation/lti.svg" alt="lti" />
+                <div class="compensation__item-icon">
+                  <img src="/icons/compensation/lti.svg" alt="lti" />
+                </div>
                 <p class="compensation__item-text">LTI</p>
               </div>
             </div>
 
             <div class="compensation__breakline"></div>
 
-            <div class="compensation__text">
+            <div class="compensation__text title">
               Программа дополнительной мотивации
               <span class="compensation__text_red">доплата 12% от суммы</span>
             </div>
 
             <div class="compensation__items">
               <div class="compensation__item">
-                <img src="/icons/motivation/printer.svg" alt="printer" />
+                <div class="compensation__item-icon">
+                  <img src="/icons/motivation/printer.svg" alt="printer" />
+                </div>
                 <p class="compensation__item-text">Оргтехники</p>
               </div>
 
               <div class="compensation__item">
-                <img src="/icons/motivation/dms.svg" alt="dms" />
+                <div class="compensation__item-icon">
+                  <img src="/icons/motivation/dms.svg" alt="dms" />
+                </div>
                 <p class="compensation__item-text">ДМС</p>
               </div>
 
               <div class="compensation__item">
-                <img src="/icons/motivation/house.svg" alt="house" />
+                <div class="compensation__item-icon">
+                  <img src="/icons/motivation/house.svg" alt="house" />
+                </div>
                 <p class="compensation__item-text">Ипотеки</p>
               </div>
             </div>
@@ -336,31 +352,45 @@
         </div>
       </section>
 
-      <section class="slider">
+      <section class="slider section">
         <div class="container container_p">
-          <div class="slider__top">
-            <h2 class="slider__top-title title">Корпоративная жизнь</h2>
-            <div class="slider__top-btns">
-              <img
-                src="/icons/arrows/arr_left.svg"
-                alt="arrow left"
-                class="slider__arrow slider-prev"
-              />
-              <img
-                src="/icons/arrows/arr_right.svg"
-                alt="arrow right"
-                class="slider__arrow slider-next"
-              />
+          <div class="swiper">
+            <div class="slider__top">
+              <h2 class="slider__top-title title">Корпоративная жизнь</h2>
+              <div class="slider__top-btns">
+                <img
+                  src="/icons/arrows/arr_left.svg"
+                  alt="arrow left"
+                  class="slider__arrow slider-prev"
+                />
+                <img
+                  src="/icons/arrows/arr_right.svg"
+                  alt="arrow right"
+                  class="slider__arrow slider-next"
+                />
+              </div>
+            </div>
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/images/slider/slide1.png" alt="slide1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/slider/slide2.png" alt="slide1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/slider/slide3.png" alt="slide1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/slider/slide4.png" alt="slide1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/slider/slide5.png" alt="slide1" />
+              </div>
+              ...
             </div>
           </div>
-          <div class="slider__wrapper">
-            <img src="/images/slider/slide1.png" alt="slide1" />
-            <img src="/images/slider/slide2.png" alt="slide2" />
-            <img src="/images/slider/slide3.png" alt="slide3" />
-            <img src="/images/slider/slide4.png" alt="slide4" />
-            <img src="/images/slider/slide5.png" alt="slide5" />
-          </div>
-          <div class="slider__tabs"></div>
+          <div class="slider__pagination"></div>
         </div>
       </section>
     </div>
