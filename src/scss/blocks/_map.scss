@@ -15,11 +15,18 @@
     position: relative;
     margin-left: 0;
 
-    img {
+    &_active {
+      .map__selection-arrow {
+        transform: rotate(-180deg);
+      }
+    }
+
+    &-arrow {
       position: absolute;
       top: 9px;
       right: -32px;
       cursor: pointer;
+      transition: all 0.3s ease-in;
     }
   }
 
@@ -32,6 +39,11 @@
       font-weight: 600;
       line-height: 20px;
       cursor: pointer;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        color: $secondary-color;
+      }
 
       &_active {
         color: $secondary-color;
@@ -48,6 +60,7 @@
     left: 0;
     right: 0;
     box-shadow: $shadow;
+    display: none;
 
     &-items {
       display: flex;
@@ -70,7 +83,143 @@
       li {
         font-weight: 400;
         line-height: 30px;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          color: $secondary-color;
+        }
       }
     }
   }
+
+  &__img-wrapper {
+    position: relative;
+  }
+
+  &__dot {
+    position: absolute;
+    font-size: toRem(14);
+    font-weight: 600;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 8px;
+      width: 8px;
+      background-color: $text-color;
+      border-radius: 100%;
+      top: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.map__dot[data-city="moscow"] {
+  bottom: 58.5%;
+  left: 9.7%;
+}
+.map__dot[data-city="voronezh"] {
+  bottom: 54.5%;
+  left: 5.6%;
+}
+.map__dot[data-city="yaros"] {
+  top: 34.5%;
+  left: 12%;
+}
+.map__dot[data-city="belg"] {
+  bottom: 49.9%;
+  left: 5.3%;
+}
+.map__dot[data-city="stpeter"] {
+  top: 22%;
+  left: 8.1%;
+}
+.map__dot[data-city="kalin"] {
+  top: 21%;
+  left: 0.5%;
+}
+.map__dot[data-city="rost"] {
+  bottom: 42.6%;
+  left: 3.2%;
+}
+.map__dot[data-city="kras"] {
+  bottom: 31.6%;
+  left: 2%;
+}
+.map__dot[data-city="volg"] {
+  bottom: 37%;
+  left: 7%;
+}
+.map__dot[data-city="kazan"] {
+  bottom: 46%;
+  left: 18.7%;
+}
+.map__dot[data-city="samara"] {
+  bottom: 44.5%;
+  left: 13.6%;
+}
+.map__dot[data-city="ufa"] {
+  bottom: 40%;
+  left: 20%;
+}
+.map__dot[data-city="oren"] {
+  bottom: 35.2%;
+  left: 15.65%;
+}
+.map__dot[data-city="novg"] {
+  top: 44.5%;
+  left: 13%;
+}
+.map__dot[data-city="ekb"] {
+  bottom: 41.3%;
+  left: 23%;
+}
+.map__dot[data-city="chelyaba"] {
+  bottom: 35.3%;
+  right: 71.8%;
+}
+.map__dot[data-city="perm"] {
+  bottom: 44.8%;
+  left: 28.7%;
+}
+.map__dot[data-city="surg"] {
+  bottom: 42.9%;
+  left: 33.9%;
+}
+.map__dot[data-city="tyumen"] {
+  bottom: 35.3%;
+  right: 64.8%;
+}
+.map__dot[data-city="izhevsk"] {
+  bottom: 47.3%;
+  left: 24.7%;
+}
+.map__dot[data-city="novosib"] {
+  bottom: 20.3%;
+  right: 56%;
+}
+.map__dot[data-city="omsk"] {
+  bottom: 16.3%;
+  right: 61.6%;
+}
+.map__dot[data-city="tomsk"] {
+  bottom: 19.9%;
+  right: 52%;
+}
+.map__dot[data-city="krasnoy"] {
+  bottom: 20%;
+  right: 46%;
+}
+.map__dot[data-city="irk"] {
+  bottom: 13%;
+  right: 42.8%;
+}
+.map__dot[data-city="hab"] {
+  bottom: 14%;
+  right: 18.8%;
+}
+.map__dot[data-city="vlad"] {
+  bottom: 0%;
+  right: 19%;
 }

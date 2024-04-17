@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
   </head>
@@ -93,19 +97,27 @@
           <div class="map__wrapper">
             <div class="map__selection">
               Офисы Softline
-              <img src="/icons/arrows/arr_down.svg" alt="arrow down" />
+              <img
+                src="/icons/arrows/arr_down.svg"
+                alt="arrow down"
+                class="map__selection-arrow"
+              />
             </div>
 
             <ul class="map__nav">
-              <li class="map__nav-item map__nav-item_active">Все</li>
-              <li class="map__nav-item">Москва</li>
-              <li class="map__nav-item">Центр</li>
-              <li class="map__nav-item">Северо-Запад</li>
-              <li class="map__nav-item">Юг</li>
-              <li class="map__nav-item">Волга</li>
-              <li class="map__nav-item">Урал</li>
-              <li class="map__nav-item">Сибирь</li>
-              <li class="map__nav-item">Дальний восток</li>
+              <li class="map__nav-item map__nav-item_active" data-region="all">
+                Все
+              </li>
+              <li class="map__nav-item" data-region="moscow">Москва</li>
+              <li class="map__nav-item" data-region="centre">Центр</li>
+              <li class="map__nav-item" data-region="n_west">Северо-Запад</li>
+              <li class="map__nav-item" data-region="south">Юг</li>
+              <li class="map__nav-item" data-region="volga">Волга</li>
+              <li class="map__nav-item" data-region="ural">Урал</li>
+              <li class="map__nav-item" data-region="siberia">Сибирь</li>
+              <li class="map__nav-item" data-region="far_east">
+                Дальний восток
+              </li>
             </ul>
 
             <div class="map__dropdown">
@@ -177,8 +189,89 @@
               </ul>
             </div>
           </div>
-          <div class="map__img">
-            <img src="/images/bgs/map.png" alt="map" />
+
+          <div class="map__img-wrapper">
+            <img src="/images/bgs/map.png" alt="map" class="map__img" />
+
+            <div class="map__dot" data-region="moscow" data-city="moscow">
+              Москва
+            </div>
+            <div class="map__dot" data-region="centre" data-city="voronezh">
+              Воронеж
+            </div>
+            <div class="map__dot" data-region="centre" data-city="yaros">
+              Ярославль
+            </div>
+            <div class="map__dot" data-region="centre" data-city="belg">
+              Белгород
+            </div>
+            <div class="map__dot" data-region="n_west" data-city="stpeter">
+              Санкт-Петербург
+            </div>
+            <div class="map__dot" data-region="n_west" data-city="kalin">
+              Калининград
+            </div>
+            <div class="map__dot" data-region="south" data-city="rost">
+              Ростов-на-Дону
+            </div>
+            <div class="map__dot" data-region="south" data-city="kras">
+              Краснодар
+            </div>
+            <div class="map__dot" data-region="south" data-city="volg">
+              Волгоград
+            </div>
+            <div class="map__dot" data-region="volga" data-city="kazan">
+              Казань
+            </div>
+            <div class="map__dot" data-region="volga" data-city="samara">
+              Самара
+            </div>
+            <div class="map__dot" data-region="volga" data-city="ufa">Уфа</div>
+            <div class="map__dot" data-region="volga" data-city="oren">
+              Оренбург
+            </div>
+            <div class="map__dot" data-region="volga" data-city="novg">
+              Н. Новгород
+            </div>
+            <div class="map__dot" data-region="ural" data-city="ekb">
+              Екатеринбург
+            </div>
+            <div class="map__dot" data-region="ural" data-city="chelyaba">
+              Челябинск
+            </div>
+            <div class="map__dot" data-region="ural" data-city="perm">
+              Пермь
+            </div>
+            <div class="map__dot" data-region="ural" data-city="surg">
+              Сургут
+            </div>
+            <div class="map__dot" data-region="ural" data-city="tyumen">
+              Тюмень
+            </div>
+            <div class="map__dot" data-region="ural" data-city="izhevsk">
+              Ижевск
+            </div>
+            <div class="map__dot" data-region="siberia" data-city="novosib">
+              Новосибирск
+            </div>
+            <div class="map__dot" data-region="siberia" data-city="omsk">
+              Омск
+            </div>
+            <div class="map__dot" data-region="siberia" data-city="tomsk">
+              Томск
+            </div>
+            <div class="map__dot" data-region="siberia" data-city="krasnoy">
+              Красноярск
+            </div>
+            <div class="map__dot" data-region="siberia" data-city="irk">
+              Иркутск
+            </div>
+            <div class="map__dot" data-region="far_east" data-city="hab">
+              Хабаровск
+            </div>
+            <div class="map__dot" data-region="far_east" data-city="vlad">
+              Владивосток
+            </div>
           </div>
         </div>
       </section>
