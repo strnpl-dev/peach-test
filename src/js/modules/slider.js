@@ -1,9 +1,9 @@
 const slider = new Swiper('.swiper', {
-    // Опциональные параметры
+
     direction: 'horizontal',
     loop: true,
 
-    // Если нужна пагинация
+
     pagination: {
         el: '.slider__pagination',
         clickable: true,
@@ -22,11 +22,11 @@ const slider = new Swiper('.swiper', {
         },
     },
 
-    // Стрелки навигации
     navigation: {
         nextEl: '.slider-next',
         prevEl: '.slider-prev',
     },
+
 });
 
 export default slider
