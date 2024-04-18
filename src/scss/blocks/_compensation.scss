@@ -6,9 +6,11 @@
 
   &__items {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: start;
     margin-top: 80px;
+    row-gap: 40px;
   }
 
   &__item {
