@@ -3,6 +3,14 @@
     margin-bottom: 55px;
   }
 
+  &__arrow {
+    position: absolute;
+    padding: 27px 20px;
+    top: 0;
+    right: 5px;
+    display: none;
+  }
+
   &__items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(calc(50% - 20px), 1fr));
@@ -12,6 +20,7 @@
   &__item {
     height: 260px;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
 
     &:hover .directions__item-content {
       transition: all 0.3s ease-out;
@@ -29,6 +38,7 @@
       height: 100%;
       transform: translateY(calc(260px - 80px));
       transition: all 0.3s ease-out;
+      position: relative;
     }
 
     &-title {
