@@ -1,0 +1,14 @@
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+  .promo {
+    &__wrapper {
+      padding: 40px 5px 96px 5px;
+      height: 290px;
+    }
+  }
+}

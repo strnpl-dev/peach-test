@@ -1,10 +1,10 @@
 import '../scss/style.scss';
 import slider from './modules/slider'
-import sectionAnimation from './modules/sectionAnimation';
+import Map from './modules/map';
 
 'use strict'
 
 window.addEventListener('DOMContentLoaded', () => {
 
-
+    new Map('.map__selection', '[data-region]', '[data-city]').init()
 })

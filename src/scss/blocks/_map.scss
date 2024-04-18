@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 28px 70px;
+    padding: 0px 70px 0 70px;
     box-shadow: $shadow;
     margin-bottom: 90px;
     position: relative;
@@ -35,9 +35,10 @@
     column-gap: 30px;
 
     &-item {
+      line-height: 74px;
+      padding-top: 3px;
       font-size: toRem(18);
       font-weight: 600;
-      line-height: 20px;
       cursor: pointer;
       transition: all 0.2s ease-in;
 
@@ -60,7 +61,7 @@
     left: 0;
     right: 0;
     box-shadow: $shadow;
-    display: none;
+    z-index: 5;
 
     &-items {
       display: flex;
@@ -73,6 +74,7 @@
       font-weight: 600;
       font-size: toRem(18);
       line-height: 20px;
+      position: relative;
       cursor: pointer;
 
       &_active {
@@ -89,6 +91,11 @@
           color: $secondary-color;
         }
       }
+    }
+
+    &-arr {
+      position: absolute;
+      top: 10px;
     }
   }
 

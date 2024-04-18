@@ -1,0 +1,48 @@
+@media screen and (max-width: 992px) {
+  .header {
+    &__logo {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 978px) {
+  .header {
+    &__wrapper {
+    }
+
+    &__logo {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .header {
+    &__logo {
+      margin-bottom: 16px;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    &__wrapper {
+      padding: 16px 5px 16px 5px;
+    }
+
+    .nav {
+      &__items {
+        gap: 5px;
+      }
+      &__item {
+        &-link {
+          font-size: toRem(14);
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
