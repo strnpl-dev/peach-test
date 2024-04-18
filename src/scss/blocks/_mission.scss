@@ -5,11 +5,13 @@
     color: #fff;
     text-align: center;
     position: relative;
+    overflow: hidden;
 
     &::before {
       content: url("/public/images/left_pattern.png");
       position: absolute;
       background-repeat: no-repeat;
+      background-size: contain;
       height: 100%;
       top: 10%;
       left: 0;
@@ -29,6 +31,8 @@
   &__title {
     margin-bottom: 40px;
     font-weight: 600;
+    position: relative;
+    z-index: 5;
   }
 
   &__descr {
