@@ -62,7 +62,7 @@ class Map {
             });
         });
 
-        this.displayCities('data-region', 'south');
+        this.displayCities('data-region', 'all');
     }
 }
 
