@@ -7,6 +7,24 @@
     box-shadow: $shadow;
     margin-bottom: 90px;
     position: relative;
+
+    &_active {
+      & .map__nav {
+        opacity: 0.2;
+      }
+      & .map__selection-arrow {
+        transform: rotate(-180deg);
+      }
+
+      & .map__dropdown {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      & ~ .map__img-wrapper {
+        opacity: 0.2;
+      }
+    }
   }
 
   &__selection {
@@ -14,17 +32,16 @@
     font-weight: 600;
     position: relative;
     margin-left: 0;
-
-    &_active {
-      .map__selection-arrow {
-        transform: rotate(-180deg);
-      }
-    }
+    margin-right: 56px;
+    white-space: nowrap;
+    cursor: pointer;
 
     &-arrow {
       position: absolute;
       top: 9px;
-      right: -32px;
+      padding-left: 6px;
+      left: auto;
+      right: auto;
       cursor: pointer;
       transition: all 0.3s ease-in;
     }
@@ -35,12 +52,13 @@
     column-gap: 30px;
 
     &-item {
-      line-height: 74px;
-      padding-top: 3px;
+      line-height: 2px;
+      padding-bottom: 28px;
+      padding-top: 28px;
       font-size: toRem(18);
       font-weight: 600;
+      white-space: nowrap;
       cursor: pointer;
-      transition: all 0.2s ease-in;
 
       &:hover {
         color: $secondary-color;
@@ -57,11 +75,33 @@
     position: absolute;
     background-color: #fff;
     padding: 30px 68.5px;
-    top: 110px;
+    top: 90px;
     left: 0;
     right: 0;
     box-shadow: $shadow;
     z-index: 5;
+    transform: translateY(0.5rem);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+
+    &_active {
+      transform: translateY(0);
+      visibility: visible;
+      opacity: 1;
+
+      .map__nav {
+        opacity: 0.2;
+      }
+
+      .map__img-wrapper {
+        opacity: 0.2;
+      }
+    }
+
+    &-wrapper {
+      position: relative;
+    }
 
     &-items {
       display: flex;
@@ -77,9 +117,11 @@
       position: relative;
       cursor: pointer;
 
-      &_active {
+      &_active &:not(ul, li) {
         color: $secondary-color;
         border-bottom: 3px solid $secondary-color;
+
+        display: block;
       }
 
       li {
@@ -95,7 +137,7 @@
 
     &-arr {
       position: absolute;
-      top: 10px;
+      display: none;
     }
   }
 
@@ -120,6 +162,10 @@
       transform: translateX(-50%);
     }
   }
+}
+
+.map__dropdown-item_active .map__dropdown-cities {
+  display: block;
 }
 
 .map__dot[data-city="moscow"] {

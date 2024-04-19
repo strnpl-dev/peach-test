@@ -10,5 +10,5 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new Accordeon('.directions__item').init()
 
-    new Map('.map__selection', '[data-region]', '[data-city]').init()
+    new Map('.map__selection', '.map__wrapper', '.map__nav-item', '.map__dropdown-item', '.map__dot').init()
 })
