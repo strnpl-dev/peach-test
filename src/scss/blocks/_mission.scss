@@ -8,7 +8,7 @@
     overflow: hidden;
 
     &::before {
-      content: url("/public/images/left_pattern.png");
+      content: url("../images/left_pattern.png");
       position: absolute;
       background-repeat: no-repeat;
       background-size: contain;
@@ -19,7 +19,7 @@
     }
 
     &::after {
-      content: url("/public/images/right_pattern.png");
+      content: url("../images/right_pattern.png");
       position: absolute;
       background-repeat: no-repeat;
       height: 100%;
