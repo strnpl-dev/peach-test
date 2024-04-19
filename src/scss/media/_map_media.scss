@@ -1,17 +1,25 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .map {
     overflow-x: scroll;
     &::-webkit-scrollbar {
       display: none;
     }
-    &::-webkit-scrollbar-thumb {
-      display: none;
-      display: none;
-    }
 
     &__wrapper {
+      padding: 0 30px;
+    }
+
+    &__nav {
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .map {
+    &__wrapper {
       display: block;
-      width: 185%;
+      width: 120%;
       padding: 18px 5px 0;
       column-gap: 16px;
       margin-bottom: 9px;
@@ -31,18 +39,22 @@
       }
     }
 
+    &__dot {
+      font-size: 12px;
+    }
+
     &__img-wrapper {
       min-width: 862px;
     }
 
     &__dropdown {
       top: 55px;
-      padding: 18px 5px;
+      padding: 18px 10px 18px 5px;
       width: 55%;
       &-items {
         display: grid;
         gap: 14px;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 2fr;
       }
 
       &-item {
@@ -67,4 +79,26 @@
 }
 
 @media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 476px) {
+  .map {
+    &__wrapper {
+      width: 130%;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .map {
+    &__wrapper {
+      width: 150%;
+    }
+  }
+}
+@media screen and (max-width: 340px) {
+  .map {
+    &__wrapper {
+      width: 190%;
+    }
+  }
 }

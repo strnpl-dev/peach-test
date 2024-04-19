@@ -163,6 +163,9 @@
     }
   }
 }
+.south_west {
+  text-wrap: nowrap;
+}
 
 .map__dropdown-item_active .map__dropdown-cities {
   display: block;

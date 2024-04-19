@@ -55,12 +55,29 @@ class Map {
 
         this.citiesContainer.forEach(container => {
             container.addEventListener('click', (evt) => {
-                Array.from(this.citiesContainer).forEach(el => el.classList.remove('map__dropdown-item_active'));
-                this.showDropdown(container, 'map__dropdown-item_active');
-                const isCity = evt.target.getAttribute('data-city');
-                this.chooseCity(evt, '.map__dropdown-cities', isCity);
+                const clickedItem = evt.target.closest('.map__dropdown-item');
+                if (!clickedItem) return;
+
+                const isCityItem = evt.target.closest('.map__dropdown-cities li');
+                if (isCityItem) {
+                    const isCity = isCityItem.getAttribute('data-city');
+                    this.chooseCity(evt, '.map__dropdown-cities', isCity);
+                    return;
+                }
+
+                Array.from(container.querySelectorAll('.map__dropdown-item')).forEach(el => el.classList.remove('map__dropdown-item_active'));
+
+                if (clickedItem.classList.contains('map__dropdown-item_active')) {
+                    clickedItem.classList.remove('map__dropdown-item_active');
+                } else {
+                    clickedItem.classList.add('map__dropdown-item_active');
+                }
             });
         });
+
+
+
+
 
         this.displayCities('data-region', 'all');
     }
